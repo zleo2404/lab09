@@ -1,4 +1,4 @@
-package it.unibo.oop.lab.workers02;
+package it.unibo.oop.workers02;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package it.unibo.oop.lab.workers01;
+package it.unibo.oop.workers01;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
