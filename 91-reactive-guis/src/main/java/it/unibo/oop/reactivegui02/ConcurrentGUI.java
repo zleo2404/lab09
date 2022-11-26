@@ -12,6 +12,7 @@ import javax.swing.SwingUtilities;
 /**
  * Second example of reactive GUI.
  */
+@SuppressWarnings("PMD.AvoidPrintStackTrace")
 public final class ConcurrentGUI extends JFrame {
 
     private static final long serialVersionUID = -6218820567019985015L;

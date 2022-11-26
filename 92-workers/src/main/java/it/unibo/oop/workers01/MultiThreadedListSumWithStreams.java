@@ -7,6 +7,7 @@ import java.util.stream.IntStream;
  * This is an implementation using streams.
  * 
  */
+@SuppressWarnings("CPD-START")
 public final class MultiThreadedListSumWithStreams implements SumList {
 
     private final int nthread;
@@ -44,6 +45,7 @@ public final class MultiThreadedListSumWithStreams implements SumList {
         }
 
         @Override
+        @SuppressWarnings("PMD.SystemPrintln")
         public void run() {
             System.out.println("Working from position " + startpos + " to position " + (startpos + nelem - 1));
             for (int i = startpos; i < list.size() && i < startpos + nelem; i++) {
@@ -81,6 +83,7 @@ public final class MultiThreadedListSumWithStreams implements SumList {
                 .sum();
     }
 
+    @SuppressWarnings("PMD.AvoidPrintStackTrace")
     private static void joinUninterruptibly(final Thread target) {
         var joined = false;
         while (!joined) {

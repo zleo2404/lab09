@@ -14,6 +14,7 @@ import javax.swing.SwingUtilities;
 /**
  * Third experiment with reactive gui, solution using lambdas.
  */
+@SuppressWarnings("PMD.AvoidPrintStackTrace")
 public final class AnotherConcurrentGUIWithLambdas extends JFrame {
 
     private static final long serialVersionUID = 1L;
@@ -31,6 +32,7 @@ public final class AnotherConcurrentGUIWithLambdas extends JFrame {
     /**
      * Builds a C3GUI.
      */
+    @SuppressWarnings("CPD-START")
     public AnotherConcurrentGUIWithLambdas() {
         final Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         this.setSize((int) (screenSize.getWidth() * WIDTH_PERC), (int) (screenSize.getHeight() * HEIGHT_PERC));
@@ -65,7 +67,8 @@ public final class AnotherConcurrentGUIWithLambdas extends JFrame {
         });
     }
 
-    private class CounterAgent implements Runnable {
+    private class CounterAgent implements Runnable, java.io.Serializable {
+        private static final long serialVersionUID = 1L;
         private volatile boolean stop;
         private volatile boolean up = true;
         private int counter;

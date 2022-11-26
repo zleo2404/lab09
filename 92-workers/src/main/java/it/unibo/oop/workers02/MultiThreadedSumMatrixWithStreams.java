@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
  * This is a standard implementation of the calculation.
  * 
  */
-
+@SuppressWarnings("CPD-START")
 public class MultiThreadedSumMatrixWithStreams implements SumMatrix {
 
     private final int nthread;

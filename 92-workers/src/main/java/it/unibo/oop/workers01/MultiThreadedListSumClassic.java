@@ -44,6 +44,7 @@ public final class MultiThreadedListSumClassic implements SumList {
         }
 
         @Override
+        @SuppressWarnings("PMD.SystemPrintln")
         public void run() {
             System.out.println("Working from position " + startpos + " to position " + (startpos + nelem - 1));
             for (int i = startpos; i < list.size() && i < startpos + nelem; i++) {

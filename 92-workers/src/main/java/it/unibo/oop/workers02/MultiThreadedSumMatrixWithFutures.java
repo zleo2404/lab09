@@ -11,7 +11,7 @@ import java.util.concurrent.Future;
  * This is a standard implementation of the calculation.
  * 
  */
-
+@SuppressWarnings("CPD-START")
 public class MultiThreadedSumMatrixWithFutures implements SumMatrix {
 
     private final int nthread;
@@ -30,7 +30,7 @@ public class MultiThreadedSumMatrixWithFutures implements SumMatrix {
         this.nthread = nthread;
     }
 
-    private final class Worker implements Callable<Double> {
+    private static final class Worker implements Callable<Double> {
 
         private final double[][] matrix;
         private final int startpos;

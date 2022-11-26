@@ -16,6 +16,7 @@ import javax.swing.SwingUtilities;
 /**
  * Third experiment with reactive gui.
  */
+@SuppressWarnings("PMD.AvoidPrintStackTrace")
 public final class AnotherConcurrentGUI extends JFrame {
 
     private static final long serialVersionUID = 1L;
@@ -88,7 +89,8 @@ public final class AnotherConcurrentGUI extends JFrame {
         });
     }
 
-    private class CounterAgent implements Runnable {
+    private class CounterAgent implements Runnable, java.io.Serializable {
+        private static final long serialVersionUID = 1L;
         private volatile boolean stop;
         private volatile boolean up = true;
         private int counter;

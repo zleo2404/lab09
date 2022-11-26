@@ -15,6 +15,7 @@ import javax.swing.SwingUtilities;
  * This is a first example on how to realize a reactive GUI.
  * This shows an alternative solutions using lambdas
  */
+@SuppressWarnings("PMD.AvoidPrintStackTrace")
 public final class ConcurrentGUI extends JFrame {
 
     private static final long serialVersionUID = 1L;
