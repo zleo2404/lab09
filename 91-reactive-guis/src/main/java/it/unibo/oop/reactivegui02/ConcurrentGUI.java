@@ -12,5 +12,6 @@ import javax.swing.SwingUtilities;
 /**
  * Second example of reactive GUI.
  */
+@SuppressWarnings("PMD.AvoidPrintStackTrace")
 public final class ConcurrentGUI extends JFrame {
 }
