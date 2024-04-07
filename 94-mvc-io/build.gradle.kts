@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.github.spotbugs:spotbugs-annotations:4.8.3")
+    compileOnly("com.github.spotbugs:spotbugs-annotations:4.8.4")
 }
 
 application {
