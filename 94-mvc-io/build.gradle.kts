@@ -1,7 +1,7 @@
 plugins {
     application
     java
-    id("org.danilopianini.gradle-java-qa") version "1.28.0"
+    id("org.danilopianini.gradle-java-qa") version "1.42.0"
 }
 
 repositories {
@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("com.github.spotbugs:spotbugs-annotations:4.8.3")
+    compileOnly("com.github.spotbugs:spotbugs-annotations:4.8.5")
 }
 
 application {
