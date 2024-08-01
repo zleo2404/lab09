@@ -19,7 +19,7 @@ import javax.swing.JTextField;
 
 /**
  * A very simple program using a graphical interface.
- * 
+ *
  */
 public final class SimpleGUI {
 
@@ -71,8 +71,7 @@ public final class SimpleGUI {
                 final StringBuilder text = new StringBuilder();
                 final List<String> history = SimpleGUI.this.controller.getPrintedStringsHistory();
                 for (final String print: history) {
-                    text.append(print);
-                    text.append('\n');
+                    text.append(print).append('\n');
                 }
                 if (!history.isEmpty()) {
                     text.deleteCharAt(text.length() - 1);
@@ -84,7 +83,7 @@ public final class SimpleGUI {
          * Make the frame half the resolution of the screen. This very method is
          * enough for a single screen setup. In case of multiple monitors, the
          * primary is selected.
-         * 
+         *
          * In order to deal coherently with multimonitor setups, other
          * facilities exist (see the Java documentation about this issue). It is
          * MUCH better than manually specify the size of a window in pixel: it
@@ -107,7 +106,7 @@ public final class SimpleGUI {
     }
 
     /**
-     * 
+     *
      * @param args
      *            ignored
      */
