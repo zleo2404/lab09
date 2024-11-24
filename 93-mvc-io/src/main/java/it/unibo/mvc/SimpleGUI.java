@@ -1,8 +1,6 @@
 package it.unibo.mvc;
 
 
-import it.unibo.mvc.api.Controller;
-
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;

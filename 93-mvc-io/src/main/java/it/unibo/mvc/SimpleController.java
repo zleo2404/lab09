@@ -3,7 +3,6 @@ package it.unibo.mvc;
 import java.util.ArrayList;
 import java.util.List;
 
-import it.unibo.mvc.api.Controller;
 
 /**
  * 
